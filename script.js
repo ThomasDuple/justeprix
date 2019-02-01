@@ -1,5 +1,6 @@
 $(document).ready(function() {
   var price = (Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
+  console.log("Salut jeune tricheur !");
   console.log("Le juste prix est de",price,"€");
 
   $('#plus,#minus,#proptxt,#b2').hide();
@@ -9,6 +10,8 @@ $(document).ready(function() {
   $('#try').on('click', function() {
     console.log("Bouton enclenché");
     var prop = document.getElementById('test').value;
+    document.getElementById('test').value = '';
+    document.getElementById("test").focus();
     $("#proptxt").show();
     $("#prompt").hide();
     if (prop < price) {
