@@ -1,3 +1,5 @@
+// On en parle pas ok ?
+
 $(document).ready(function() {
   var price = (Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000);
   console.log("Salut jeune tricheur !");
